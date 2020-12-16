@@ -266,6 +266,17 @@ body{
     font-family: poppins;
     font-size: 65px;
 }
+
+@media (max-width: 475px){
+    .header-content .firstline{
+        z-index: 2;
+        font-weight:700;
+        font-family: poppins;
+        font-size: 55px;
+        margin-top: 100px;
+    }
+}
+
 .header-content .secondline{
     z-index: 2;
     font-size: 30px;
@@ -1075,9 +1086,10 @@ padding-bottom: 40px;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-left: 10px;
 }
 .contact-info{
-    width: 40%;
+    /* width: 40%; */
     height: 500px;
     background: url(../images/contact-back.jpg);
     background-position: center;
@@ -1192,14 +1204,14 @@ form button:hover{
 }
 .contect-info-content-line{
     height: auto;
-    padding: 10px;
+    /* padding: 10px; */
     position: relative;
     z-index: 2;
     display: flex;
     flex-direction: row;
     align-items: center;
     text-align: left;
-    margin-left: 100px;
+    margin-left: 50px;
 }
 .contact-info-icon-text{
     color: whitesmoke;
@@ -1379,6 +1391,17 @@ For devices with smaller width like mobile phone
         height: auto;
         width: 0%;   
     }
+
+    @media (max-width: 375px){
+        .header-image{
+            display: flex;
+            height: auto;
+            width: 0%;   
+            margin-left: -200px;
+            float: left;
+        }
+    }
+
     .social-media-links{
         width: 100%;
         left: 0;
@@ -1400,7 +1423,7 @@ For devices with smaller width like mobile phone
         display: none;
     }
     #breaker{
-        height: 50vh;
+        height: 100vh;
         width: 200%;
         background-color: #c70039;
         opacity: 1;
@@ -1663,8 +1686,8 @@ For devices with smaller width like mobile phone
                 justify-content: center;
             }
             .contact-info{
-                width: 90%;
-                height: 500px;
+                width: 100%;
+                height: 1000px;
                 background-position: center;
                 background-size: cover;
                 border-radius: 16px;
@@ -2563,4 +2586,46 @@ for tabs and large phones
         transition: all .4s ease;
     }
 }
-  */
+
+.buttonsell{
+    width: 300px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    /* opacity: 0.1; */
+    color: white;
+    background: rgba(0, 0, 0, 0);
+    border: 0px solid gray;
+    cursor: pointer;
+    font-size: 35px;
+    /* border-radius: 50%; */
+}
+.buttonsell:hover{
+    color: red;
+    transition: 0.3s;
+}
+
+
+
+
+.now {
+    width: 100%;
+    height: 150px;
+    background-color: #f4f5f8;
+    background-image: -webkit-gradient(linear, left top, right top, from(#211b19), to(#4e3427));
+    background-image: linear-gradient(to right, #111010 0%, #311d12 200%);
+  }
+
+.scrollLeft{
+    font-size: 65px;
+    display: flex;
+    color: white;
+    margin-top: 35px
+}
+
+.numGuide{
+    color: white;
+    font-size: 30px;
+}
